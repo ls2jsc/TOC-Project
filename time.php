@@ -14,7 +14,7 @@ foreach($data as $key => $arr)
 arsort($city);
 foreach($city as $key => $array)
 {
-	if($array['total'] > 10)
+	if($array['total'] > 10)//過濾掉交易件數不到10筆的偏差資料
 	{
 		arsort($array);
 		echo $key.'<br>';

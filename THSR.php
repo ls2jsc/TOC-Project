@@ -51,7 +51,7 @@ foreach($city as $key => $array)
 {
 	krsort($array);
 	echo $key.' : ';
-	echo '<br>'.current($array);//陣列指標
+	echo '<br>'.current($array);//陣列指標, current印出現在位置, next移動指標並向下移動
 	echo '<br>'.next($array);
 	echo '<br>'.next($array);
 	echo '<br>'.next($array);

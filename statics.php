@@ -10,7 +10,7 @@ foreach($data as $key => $arr)
 		$temp = $arr['鄉鎮市區'];
 		$city[$temp]['total'] += $arr['總價元'];
 		$city[$temp]['count'] += 1;
-		if($city[$temp]['min'] == null)
+		if($city[$temp]['min'] == null)//決定最高.最低
 		{
 			$city[$temp]['min'] = $arr['總價元'];
 			$city[$temp]['min_time'] = $arr['交易年月'];
